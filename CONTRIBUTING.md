@@ -88,7 +88,7 @@ Also, there are some special branches for different purposes
 
 To quickly describe state and category of issue or pull request use the following labels
 
-** Issue State Labels**
+**Issue State Labels**
 
 | **Label name** | **Description** |
 | --- | --- |
@@ -115,7 +115,7 @@ To quickly describe state and category of issue or pull request use the followin
 | `important` | Key issue |
 | `challenge` | A steep climb, not a long walk |
 | `performance` | Related to project performance |
-| `analysis' | Related to problem domain |
+| `analysis` | Related to problem domain |
 | `architecture` | Related to project architecture |
 | `design` | Related to project design |
 | `engineering` | Related to project engineering |
