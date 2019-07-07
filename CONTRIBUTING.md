@@ -42,14 +42,14 @@ To develop projects effectively this strict style guide is provided.
 ### C# Styleguide
 
 - Use **PascalCase** for:
-  - Classes and interfaces (interfaces should have `I` prefix as general C# code convention suggests
+  - Classes and interfaces (interfaces should have `I` prefix as general C# code convention suggests)
   - Methods
   - Static Fields
   - Delegates
     - with `EventHandler` suffix for delegates that are used in events
     - with `Callback` suffix for delegates that are used as events
   - Events with `On` prefix
-- Use **camelCase** for fields (even public one)
+- Use **camelCase** for fields (even public one) and local variables and method arguments, if they overlap class fields than use this.
 - Each **brace** should be on it's **own line**
 - Use **tabs** for lining text
 - Do not make lines with more than 100 characters
