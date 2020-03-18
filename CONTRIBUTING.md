@@ -211,5 +211,5 @@ To quickly describe state and category of issue or pull request use the followin
 | `help-wanted` | Developer is stuck and waits for help |
 | `blocked` | Cannot be resolved because of some other issues and pull requests |
 | `docs` | Issues requires work with documentation |
-| 'duplicate` | This Issue already exists |
+| `duplicate` | This Issue already exists |
 | `question` | Issue requires some discussion | 
