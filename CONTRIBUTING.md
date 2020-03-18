@@ -136,6 +136,13 @@ When reviewing code remember to be patient and respectful.
 
 Remember: there is no ideal code.
 
+### Commit Recommendation
+
+* Do not make huge commits - commit small reasonable changes
+* Push rarely. As rarely as possible
+* Refine your commit history locally
+* Make sure that project works on any commit
+
 ### Knowledge Base
 
 Is a special place where developers summarize most useful links they found during development & write their how-to's. We store Knowledge Base on separated Wiki Page. 
@@ -184,14 +191,12 @@ To quickly describe state and category of issue or pull request use the followin
 | `bug` | Confirmed bugs or reports that are very likely to be bugs |
 | `groundwork` | Groundwork |
 
-
 **Pull Request State Labels**
 
 | **Label name** | **Description** |
 | --- | --- |
 | `work-in-progress` | Pull requests which are still being worked on, more changes will follow |
-| `needs-reviews` | Code review is needed |
-| `requires-changes` | Needs to be updated according to review |
+| `awaits-reviews` | Code review is needed |
 
 **Category Labels**
 
@@ -201,8 +206,10 @@ To quickly describe state and category of issue or pull request use the followin
 | `important` | Key issue |
 | `challenge` | A steep climb, not a long walk |
 | `performance` | Related to project performance |
-| `analysis` | Related to problem domain |
-| `architecture` | Related to project architecture |
+| `analysis` | Related to problem domain & architecture |
 | `experimental` | Research in terms of project |
 | `help-wanted` | Developer is stuck and waits for help |
 | `blocked` | Cannot be resolved because of some other issues and pull requests |
+| `docs` | Issues requires work with documentation |
+| 'duplicate` | This Issue already exists |
+| `question` | Issue requires some discussion | 
