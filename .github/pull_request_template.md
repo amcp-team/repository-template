@@ -1,14 +1,11 @@
-## Change Log
-Provide a list of changes and describe used solutions
+## Log
 
-## Change Description
-Some technical explanations for changes
+Provide a list of changes and describe used solutions referencing issues
 
-## To-Do Changes
+## To-Do
+
 What changes should be done (optional, remember to mark PR with `work-in-progress` label)
 
-## Related Issues
-List related issues and mark closed one
+## Materials and Useful Links
 
-## Materials and useful links
-List of information sources used in this PR (optional)
+List there links that were useful during the work on this issue (StackOverflow answers, videos, tutorials, articles, repositories, etc.)
