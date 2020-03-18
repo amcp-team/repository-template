@@ -24,6 +24,8 @@ This document describes how developers should contribute to this repository. Fir
 
     Following principles of [Extreme Programming](https://www.agilealliance.org/glossary/xp/#q=~(infinite~false~filters~(postType~(~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'xp))~searchTerm~'~sort~false~sortDirection~'asc~page~1)) we try to bring life into our ides.
 
+    During the development do not forget to follow all the [Style Guidelines](#style-guide), imporove Documentation & enrich Knwoledge Base.
+
 5. :beetle: **Testing**
 
     We write automated unit & integration tests following Test Driven Development practice where it's possible.
@@ -39,7 +41,21 @@ It is as simple as Agile.
 
 ## Contributing
 
-Good start is creating an Issue. For this reason we have some templates you can use for making it perfect:
+### Project Management
+
+For project management we use Automated Kanban Boards. If repository is a part of some huge project distributed across several repositories than we usually have the following structure:
+
+* **main repository**
+
+    Has no code except deploy scripts & git workflow automation. Place for analysis notes, general for entire project documentation notes. Has Knwoeldge Base only if it is about deployment, git or some generalized instruments. 
+
+* **sub module repositories**
+
+    Code the referes to concrete part of the system - service, client, standalone library, etc. Stores spcific for this repository Knowledge Base & Documentation. 
+
+### Issue Workflow
+
+Any problem starts it's way on GitHub with Issue. For this reason we have some templates you can use for making it perfect:
 
 * **Groundwork** 
 
@@ -120,6 +136,21 @@ When reviewing code remember to be patient and respectful.
 
 Remember: there is no ideal code.
 
+### Commit Recommendation
+
+* Do not make huge commits - commit small reasonable changes
+* Push rarely. As rarely as possible
+* Refine your commit history locally
+* Make sure that project works on any commit
+
+### Knowledge Base
+
+Is a special place where developers summarize most useful links they found during development & write their how-to's. We store Knowledge Base on separated Wiki Page. 
+
+### Documentation
+
+Documentation is important. Be sure that you prepared changes to documentation before pull request as it can help a reviewer to understand what is actually happening & why it's happening so. For Documentation we use Wiki. 
+
 ## Style Guide 
 
 To develop projects efficiently this strict style guides are provided. They are used for quicker code reviews & easy maintenance.
@@ -142,12 +173,11 @@ We recommend using `skewer-case` wherever it's possible
 
 As branch is always (except a couple of specific cases) is bound to some Issue than name them with the following template:
 
-`issues/XXX issue_title_there`
+`issues/XXX-issue-title-there`
 
-Also, there are some special branches for different purposes
+You don't need to provide full title for the issue there, just some core idea of it.
 
-- `master` - is for storing in-development project versions and making some non-code edits
-- `release` - stores only release versions of the project
+We don't have separated branch for making releases instead we use tags
 
 ### Issue and Pull Request Labels
 
@@ -160,16 +190,13 @@ To quickly describe state and category of issue or pull request use the followin
 | `feature` | Feature requests |
 | `bug` | Confirmed bugs or reports that are very likely to be bugs |
 | `groundwork` | Groundwork |
-| `question` | This issue needs some discussion |
-
 
 **Pull Request State Labels**
 
 | **Label name** | **Description** |
 | --- | --- |
 | `work-in-progress` | Pull requests which are still being worked on, more changes will follow |
-| `needs-reviews` | Code review is needed |
-| `requires-changes` | Needs to be updated according to review |
+| `awaits-reviews` | Code review is needed |
 
 **Category Labels**
 
@@ -179,8 +206,10 @@ To quickly describe state and category of issue or pull request use the followin
 | `important` | Key issue |
 | `challenge` | A steep climb, not a long walk |
 | `performance` | Related to project performance |
-| `analysis` | Related to problem domain |
-| `architecture` | Related to project architecture |
+| `analysis` | Related to problem domain & architecture |
 | `experimental` | Research in terms of project |
 | `help-wanted` | Developer is stuck and waits for help |
 | `blocked` | Cannot be resolved because of some other issues and pull requests |
+| `docs` | Issues requires work with documentation |
+| `duplicate` | This Issue already exists |
+| `question` | Issue requires some discussion | 

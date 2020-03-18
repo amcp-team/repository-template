@@ -13,11 +13,9 @@ A clear and concise description of what the problem is. Ex. I'm always frustrate
 
 Best practice is to provide a motivation of this kind:
 
-```
-In order to... [motivate]
-As a ... [target]
-I want ... [what]
-```
+* **In order to**... [motivate]
+* **As a** ... [target]
+* **I want** ... [what]
 
 ### Solution 
 
